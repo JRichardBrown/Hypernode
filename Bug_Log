@@ -1,0 +1,12 @@
+Bug log
+1. JLabel Image (right side) changes size depending on content of ScrollTextPane (left side).
+FIXED: Set preferred size of both textArea and imageLabel
+2. Node Parser cannot read NextNode if the description field is blank.
+FIXED: Replaced description with 
+    (this.description == null || this.description.isEmpty()? " " : this.description)
+    in the toString method of all node types.
+    
+Ideas for improvement:
+1. Import image
+2. Edit nodes while you run project
+3. Option to restart project at the end
